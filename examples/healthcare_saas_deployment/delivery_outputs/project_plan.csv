@@ -1,0 +1,25 @@
+Task ID,Task Name,Phase,Duration (Days),Start Date,End Date,Predecessors,Owner,Status,Notes
+1,Confirm GA date for Fictional Ambient,Phase 0: Mobilize,1,TBD,TBD,,Fictional Health AI,NOT STARTED,OPEN item; schedule must be established within 5 days of GA.
+2,Confirm Evaluation Period definition (dates + success criteria),Phase 0: Mobilize,2,TBD,TBD,1,Joint,NOT STARTED,OPEN item; defines 6-user evaluation scope and transition to 11 users.
+3,Identify Vendor PM and Customer PM,Phase 0: Mobilize,1,TBD,TBD,1,Joint,NOT STARTED,OPEN item from intake; needed for governance.
+4,Confirm decision authority and sign-off owners (scope/schedule/readiness),Phase 0: Mobilize,2,TBD,TBD,3,Joint,NOT STARTED,OPEN item; SOW does not define sign-offs.
+5,Define explicit out-of-scope boundaries and change control approach,Phase 0: Mobilize,2,TBD,TBD,4,Joint,NOT STARTED,OPEN item; no out-of-scope section in SOW.
+6,Establish mutually agreed project schedule (GA + 5 days trigger),Phase 1: Schedule Definition,3,GA + 5 days,TBD,1,Joint,NOT STARTED,Anchor Phase 1 start to GA + 5 days per SOW; dates TBD until GA confirmed.
+7,Set up project governance (status cadence, tooling, issue log owner),Phase 1: Schedule Definition,2,GA + 5 days,TBD,3,Joint,NOT STARTED,Tooling/cadence not defined in SOW; must be agreed.
+8,Identify customer technical owners for Cerner environment setup and access provisioning,Phase 1: Schedule Definition,2,GA + 5 days,TBD,6,Customer,NOT STARTED,OPEN dependency.
+9,Complete Technical Assessment,Phase 2: Technical Readiness,5,TBD,TBD,8,Joint,NOT STARTED,Scope/inputs for assessment are OPEN.
+10,Define SSO prerequisites (IdP, attributes, security review, envs),Phase 2: Technical Readiness,5,TBD,TBD,8,Customer,NOT STARTED,OPEN dependency; needed before SSO build.
+11,Implement SSO Integration,Phase 3: Integration,10,TBD,TBD,10,Joint,NOT STARTED,Included as technical service; acceptance criteria OPEN.
+12,Deliver AMS (Admin) training,Phase 4: Training,2,TBD,TBD,6,Fictional Health AI,NOT STARTED,Clarify if standard included vs optional (OPEN).
+13,Deliver Help Desk Training,Phase 4: Training,2,TBD,TBD,6,Fictional Health AI,NOT STARTED,Clarify if standard included vs optional (OPEN).
+14,Plan training schedule and identify attendees,Phase 4: Training,5,TBD,TBD,6,Customer,NOT STARTED,Customer responsibility; includes driving attendance.
+15,Deliver foundational web-based training + live Q&A (up to 11 clinicians),Phase 4: Training,3,TBD,TBD,14,Fictional Health AI,NOT STARTED,Delivery may be remote; format details TBD.
+16,Deliver group ILT sessions (trainer-led; up to 4 attendees per class),Phase 4: Training,10,TBD,TBD,15,Fictional Health AI,NOT STARTED,Onsite minimum attendance rules are OPEN.
+17,Optional one-on-one clinician training (if utilized),Phase 4: Training,5,TBD,TBD,15,Joint,NOT STARTED,Optional; confirm if requested and scheduling approach.
+18,Define UAT approach and approval process (scripts/results),Phase 5: Testing & UAT Support,3,TBD,TBD,6,Joint,NOT STARTED,OPEN item from intake.
+19,Develop UAT scripts (testing planning consulting),Phase 5: Testing & UAT Support,5,TBD,TBD,18,Fictional Health AI,NOT STARTED,SOW includes UAT scripts support.
+20,Execute testing support (UAT support window),Phase 5: Testing & UAT Support,10,TBD,TBD,19,Joint,NOT STARTED,Entry/exit criteria OPEN.
+21,Confirm training completion criteria and attendance remediation plan,Phase 6: Readiness & Closeout,2,TBD,TBD,16,Joint,NOT STARTED,Acceptance criteria OPEN; drives readiness.
+22,Confirm technical completion criteria (SSO complete + operational),Phase 6: Readiness & Closeout,2,TBD,TBD,11,Joint,NOT STARTED,Acceptance criteria OPEN.
+23,Transition from evaluation (6 users) to full authorized user support (11 users),Phase 6: Readiness & Closeout,1,TBD,TBD,2,Joint,NOT STARTED,Depends on Evaluation Period definition and completion.
+24,Project closeout / handoff,Phase 6: Readiness & Closeout,2,TBD,TBD,21;22;23,Joint,NOT STARTED,Confirm what support includes post-evaluation and any hypercare arrangements.

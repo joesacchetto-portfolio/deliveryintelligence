@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="906" viewBox="0 0 1400 906">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#5A7A9A"/>
+    </marker>
+    <marker id="arr-gold" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#B07A00"/>
+    </marker>
+    <marker id="arr-sm" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="906" fill="#EBEFF4"/>
+
+  <!-- Title band -->
+  <rect x="0" y="0" width="1400" height="74" fill="#1B3A5C"/>
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">AI-ASSISTED PROJECT DELIVERY FRAMEWORK</text>
+  <text x="700" y="56" font-family="Arial, sans-serif" font-size="13" fill="#A8C4D8" text-anchor="middle">Three-Module Human-Supervised Workflow  ·  AI Accelerates  ·  PM Reviews  ·  PM Decides</text>
+
+  <!-- PROJECT INPUT node -->
+  <rect x="590" y="84" width="220" height="46" rx="6" fill="#1B3A5C" stroke="#A8C4D8" stroke-width="1.5"/>
+  <text x="700" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">PROJECT INPUT DOCUMENT</text>
+  <text x="700" y="120" font-family="Arial, sans-serif" font-size="10" fill="#A8C4D8" text-anchor="middle">SOW · Brief · Charter · Intake Form</text>
+
+  <!-- Input distribution bus: down from input, across to Module 1 tap, and left to the parallel rail -->
+  <line x1="700" y1="130" x2="700" y2="148" stroke="#5A7A9A" stroke-width="1.5"/>
+  <line x1="700" y1="148" x2="10" y2="148" stroke="#5A7A9A" stroke-width="1.5"/>
+  <line x1="216" y1="148" x2="216" y2="164" stroke="#5A7A9A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Parallel track: input also feeds Module 3, routed down the left margin around all boxes -->
+  <polyline points="10,148 10,576 16,576" fill="none" stroke="#5A7A9A" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arr)"/>
+  <text x="95" y="556" font-family="Arial, sans-serif" font-size="8.5" fill="#5A7A9A" text-anchor="middle">parallel validation track</text>
+
+  <!-- MODULE 1 — PM INTAKE -->
+  <rect x="16" y="164" width="400" height="356" rx="6" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="2"/>
+  <rect x="16" y="164" width="400" height="38" rx="6" fill="#1B3A5C"/>
+  <rect x="16" y="188" width="400" height="14" fill="#1B3A5C"/>
+  <text x="216" y="183" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">MODULE 1 — PM INTAKE</text>
+  <text x="216" y="197" font-family="Arial, sans-serif" font-size="10" fill="#A8C4D8" text-anchor="middle">Five-Layer Analysis Engine</text>
+
+  <text x="36" y="224" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1B3A5C">FIVE-LAYER ANALYSIS FRAMEWORK</text>
+  <rect x="30" y="230" width="372" height="112" rx="4" fill="#F0F4F8"/>
+  <text x="42" y="247" font-family="Arial, sans-serif" font-size="10" fill="#374151">Layer 1 — Scope Definition</text>
+  <text x="42" y="263" font-family="Arial, sans-serif" font-size="10" fill="#374151">Layer 2 — Dependency Mapping</text>
+  <text x="42" y="279" font-family="Arial, sans-serif" font-size="10" fill="#374151">Layer 3 — Constraint Identification</text>
+  <text x="42" y="295" font-family="Arial, sans-serif" font-size="10" fill="#374151">Layer 4 — Stakeholder Alignment</text>
+  <text x="42" y="311" font-family="Arial, sans-serif" font-size="10" fill="#374151">Layer 5 — Risk Concentration</text>
+  <text x="42" y="330" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">Works with partial, messy, or incomplete input documents</text>
+
+  <!-- OPEN/INFERRED callout -->
+  <rect x="30" y="352" width="372" height="64" rx="4" fill="#FEF9E7" stroke="#B07A00" stroke-width="1"/>
+  <text x="42" y="368" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#B07A00">OPEN / INFERRED PROTOCOL</text>
+  <text x="42" y="384" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">OPEN — required information not yet confirmed; PM resolves</text>
+  <text x="42" y="399" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">INFERRED — reasoned from context; requires human validation</text>
+  <text x="42" y="414" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">AI never presents assumptions as confirmed facts</text>
+
+  <text x="36" y="436" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1B3A5C">OUTPUTS (3 files per run)</text>
+  <text x="42" y="452" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· [project]_analysis.md — full five-layer analysis</text>
+  <text x="42" y="467" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· [project]_open_items.md — consolidated OPEN items log</text>
+  <text x="42" y="482" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· [project]_stakeholder_map.md — alignment risks</text>
+  <text x="42" y="500" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">OPEN items carried forward — not resolved by the AI</text>
+
+  <!-- Arrow Module 1 → Gate 1 -->
+  <line x1="416" y1="342" x2="454" y2="342" stroke="#5A7A9A" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- GATE 1 diamond -->
+  <polygon points="474,310 510,342 474,374 438,342" fill="#FEF3C7" stroke="#B07A00" stroke-width="2"/>
+  <text x="474" y="337" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#92400E" text-anchor="middle">GATE 1</text>
+  <text x="474" y="350" font-family="Arial, sans-serif" font-size="8" fill="#92400E" text-anchor="middle">PM REVIEW</text>
+
+  <text x="474" y="294" font-family="Arial, sans-serif" font-size="9" fill="#B07A00" text-anchor="middle" font-weight="700">Human Review Gate</text>
+  <text x="474" y="305" font-family="Arial, sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">PM validates analysis</text>
+
+  <!-- Arrow Gate 1 → Module 2 -->
+  <line x1="510" y1="342" x2="548" y2="342" stroke="#5A7A9A" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- MODULE 2 — PM DELIVERY -->
+  <rect x="548" y="164" width="400" height="356" rx="6" fill="#FFFFFF" stroke="#1A5C38" stroke-width="2"/>
+  <rect x="548" y="164" width="400" height="38" rx="6" fill="#1A5C38"/>
+  <rect x="548" y="188" width="400" height="14" fill="#1A5C38"/>
+  <text x="748" y="183" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">MODULE 2 — PM DELIVERY</text>
+  <text x="748" y="197" font-family="Arial, sans-serif" font-size="10" fill="#A8D4B8" text-anchor="middle">Delivery Planning Engine</text>
+
+  <text x="568" y="224" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1A5C38">INPUTS REQUIRED</text>
+  <rect x="562" y="230" width="372" height="44" rx="4" fill="#F0F7F0"/>
+  <text x="574" y="246" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· Original project document (SOW, brief, or charter)</text>
+  <text x="574" y="261" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· All three intake outputs from Module 1 (Gate 1 accepted)</text>
+
+  <text x="568" y="292" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1A5C38">OUTPUTS (4 files per run)</text>
+  <rect x="562" y="298" width="372" height="100" rx="4" fill="#F0F4F8"/>
+  <text x="574" y="315" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">Kickoff Agenda</text>
+  <text x="574" y="328" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Gap-driven — not a generic template</text>
+  <text x="574" y="343" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">Project Plan (.csv)</text>
+  <text x="574" y="356" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Importable; OPEN items in task notes, not resolved</text>
+  <text x="574" y="371" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">RAID Log</text>
+  <text x="574" y="384" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Pre-populated; inferred risks labeled INFERRED</text>
+  <text x="574" y="399" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">Stakeholder Matrix (RACI)</text>
+
+  <!-- Guardrail callout -->
+  <rect x="562" y="408" width="372" height="44" rx="4" fill="#FEF9E7" stroke="#B07A00" stroke-width="1"/>
+  <text x="574" y="424" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#B07A00">FABRICATION PREVENTION GUARDRAIL</text>
+  <text x="574" y="439" font-family="Arial, sans-serif" font-size="9" fill="#374151">AI does not fill gaps with plausible assumptions</text>
+  <text x="574" y="452" font-family="Arial, sans-serif" font-size="9" fill="#374151">Uncertainty is preserved — PM resolves, not the engine</text>
+
+  <!-- Arrow Module 2 → Gate 2 -->
+  <line x1="948" y1="342" x2="982" y2="342" stroke="#5A7A9A" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- GATE 2 diamond -->
+  <polygon points="1002,310 1038,342 1002,374 966,342" fill="#FEF3C7" stroke="#B07A00" stroke-width="2"/>
+  <text x="1002" y="337" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#92400E" text-anchor="middle">GATE 2</text>
+  <text x="1002" y="350" font-family="Arial, sans-serif" font-size="8" fill="#92400E" text-anchor="middle">PM REVIEW</text>
+
+  <text x="1002" y="294" font-family="Arial, sans-serif" font-size="9" fill="#B07A00" text-anchor="middle" font-weight="700">Human Review Gate</text>
+  <text x="1002" y="305" font-family="Arial, sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">PM validates artifacts</text>
+
+  <!-- Arrow Gate 2 → Delivery Package -->
+  <line x1="1038" y1="342" x2="1072" y2="342" stroke="#5A7A9A" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- DELIVERY PACKAGE -->
+  <rect x="1072" y="164" width="312" height="356" rx="6" fill="#FFFFFF" stroke="#374151" stroke-width="2"/>
+  <rect x="1072" y="164" width="312" height="38" rx="6" fill="#374151"/>
+  <rect x="1072" y="188" width="312" height="14" fill="#374151"/>
+  <text x="1228" y="183" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">DELIVERY-READY PACKAGE</text>
+  <text x="1228" y="197" font-family="Arial, sans-serif" font-size="10" fill="#D1D5DB" text-anchor="middle">PM-Accepted Artifacts</text>
+
+  <text x="1086" y="224" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#374151">FOUR DELIVERY ARTIFACTS</text>
+  <rect x="1082" y="230" width="290" height="148" rx="4" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+
+  <rect x="1090" y="238" width="8" height="8" rx="2" fill="#1A5C38"/>
+  <text x="1104" y="247" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">Kickoff Agenda</text>
+  <text x="1104" y="260" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Gap-driven, not generic</text>
+
+  <rect x="1090" y="268" width="8" height="8" rx="2" fill="#1A5C38"/>
+  <text x="1104" y="277" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">Project Plan (.csv)</text>
+  <text x="1104" y="290" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">MS Project / Excel importable</text>
+
+  <rect x="1090" y="298" width="8" height="8" rx="2" fill="#1A5C38"/>
+  <text x="1104" y="307" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">RAID Log</text>
+  <text x="1104" y="320" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Risks, Assumptions, Issues, Dependencies</text>
+
+  <rect x="1090" y="328" width="8" height="8" rx="2" fill="#1A5C38"/>
+  <text x="1104" y="337" font-family="Arial, sans-serif" font-size="9.5" fill="#374151" font-weight="600">Stakeholder Matrix (RACI)</text>
+  <text x="1104" y="350" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Accountability gaps surfaced explicitly</text>
+
+  <text x="1086" y="398" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#374151">PM DECISIONS REQUIRED</text>
+  <rect x="1082" y="404" width="290" height="100" rx="4" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1094" y="420" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· Accept or reject each artifact</text>
+  <text x="1094" y="436" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· Resolve or escalate OPEN items</text>
+  <text x="1094" y="452" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· Confirm risk acceptance posture</text>
+  <text x="1094" y="468" font-family="Arial, sans-serif" font-size="9.5" fill="#374151">· Authorize stakeholder distribution</text>
+  <text x="1094" y="490" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">PM owns every decision in this package</text>
+
+  <!-- ===================== FEEDBACK LANE (between top row and Module 3) ===================== -->
+  <!-- Gate 1 revise/reject: down through the M1|M2 channel, along the lane, up into Module 1 -->
+  <polyline points="474,374 474,540 216,540 216,520" fill="none" stroke="#B07A00" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr-gold)"/>
+  <text x="345" y="535" font-family="Arial, sans-serif" font-size="8.5" fill="#B07A00" text-anchor="middle">revise / reject</text>
+
+  <!-- Gate 2 revise/reject: down through the M2|Delivery channel, along the lane, up into Module 2 -->
+  <polyline points="1002,374 1002,540 748,540 748,520" fill="none" stroke="#B07A00" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr-gold)"/>
+  <text x="875" y="535" font-family="Arial, sans-serif" font-size="8.5" fill="#B07A00" text-anchor="middle">revise / reject</text>
+
+  <!-- MODULE 3 — PM SIMULATION -->
+  <rect x="16" y="566" width="1368" height="228" rx="6" fill="#FFFFFF" stroke="#4A1B5C" stroke-width="2"/>
+  <rect x="16" y="566" width="1368" height="38" rx="6" fill="#4A1B5C"/>
+  <rect x="16" y="590" width="1368" height="14" fill="#4A1B5C"/>
+  <text x="700" y="585" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">MODULE 3 — PM SIMULATION</text>
+  <text x="700" y="599" font-family="Arial, sans-serif" font-size="10" fill="#C4A8D8" text-anchor="middle">Controlled Lifecycle Evaluation  ·  AI Behavior Supervision  ·  Governance Stress Test</text>
+
+  <text x="30" y="627" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#4A1B5C">FOUR SIMULATION PHASES</text>
+
+  <!-- Phase boxes -->
+  <rect x="22" y="634" width="316" height="80" rx="4" fill="#F5F0F9" stroke="#C4A8D8" stroke-width="1"/>
+  <text x="34" y="650" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4A1B5C">Phase 1 — Intake</text>
+  <text x="34" y="665" font-family="Arial, sans-serif" font-size="9" fill="#374151">AI reads charter, summarizes scope, flags risks</text>
+  <text x="34" y="679" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: stays within charter?</text>
+  <text x="34" y="693" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: flags risks proactively?</text>
+  <text x="34" y="707" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">Scope summary · Risk log · Stakeholder map</text>
+
+  <rect x="350" y="634" width="316" height="80" rx="4" fill="#F5F0F9" stroke="#C4A8D8" stroke-width="1"/>
+  <text x="362" y="650" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4A1B5C">Phase 2 — Planning</text>
+  <text x="362" y="665" font-family="Arial, sans-serif" font-size="9" fill="#374151">AI builds milestone plan, comm cadence</text>
+  <text x="362" y="679" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: context from Phase 1 maintained?</text>
+  <text x="362" y="693" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: OPEN items carried forward?</text>
+  <text x="362" y="707" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">Project plan · Communication cadence</text>
+
+  <rect x="678" y="634" width="316" height="80" rx="4" fill="#F5F0F9" stroke="#C4A8D8" stroke-width="1"/>
+  <text x="690" y="650" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4A1B5C">Phase 3 — Execution Support</text>
+  <text x="690" y="665" font-family="Arial, sans-serif" font-size="9" fill="#374151">AI drafts status updates, UAT plans, go-live docs</text>
+  <text x="690" y="679" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: adapts to new inputs?</text>
+  <text x="690" y="693" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: stale assumption drift?</text>
+  <text x="690" y="707" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">Status templates · UAT plan · Go-live checklist</text>
+
+  <rect x="1006" y="634" width="370" height="80" rx="4" fill="#FFF8F0" stroke="#B07A00" stroke-width="1.5"/>
+  <text x="1018" y="650" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#B07A00">Phase 4 — Controlled Change Event</text>
+  <text x="1018" y="665" font-family="Arial, sans-serif" font-size="9" fill="#374151">3 simultaneous disruptions injected</text>
+  <text x="1018" y="679" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: confirmed vs. unconfirmed separation?</text>
+  <text x="1018" y="693" font-family="Arial, sans-serif" font-size="9" fill="#374151">PM monitors: decision integrity under pressure?</text>
+  <text x="1018" y="707" font-family="Arial, sans-serif" font-size="9" fill="#6B7280" font-style="italic">Change response · Revised plan</text>
+
+  <!-- Phase arrows -->
+  <line x1="338" y1="674" x2="350" y2="674" stroke="#4A1B5C" stroke-width="1.5" marker-end="url(#arr-sm)"/>
+  <line x1="666" y1="674" x2="678" y2="674" stroke="#4A1B5C" stroke-width="1.5" marker-end="url(#arr-sm)"/>
+  <line x1="994" y1="674" x2="1006" y2="674" stroke="#4A1B5C" stroke-width="1.5" marker-end="url(#arr-sm)"/>
+
+  <!-- Simulation outputs -->
+  <rect x="22" y="724" width="780" height="56" rx="4" fill="#F5F0F9" stroke="#4A1B5C" stroke-width="1"/>
+  <text x="34" y="740" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4A1B5C">PRIMARY OUTPUT — AI Agent Supervision Report</text>
+  <text x="34" y="755" font-family="Arial, sans-serif" font-size="9" fill="#374151">Objective · Agent setup · Tasks assigned · Failure patterns observed</text>
+  <text x="34" y="769" font-family="Arial, sans-serif" font-size="9" fill="#374151">Drift examples · Corrections applied · Lessons learned · PM application insights</text>
+
+  <rect x="820" y="724" width="556" height="56" rx="4" fill="#FFF8F0" stroke="#B07A00" stroke-width="1"/>
+  <text x="832" y="740" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#B07A00">PM ROLE THROUGHOUT SIMULATION</text>
+  <text x="832" y="755" font-family="Arial, sans-serif" font-size="9" fill="#374151">Supervisor · Governance Owner · Drift Detector</text>
+  <text x="832" y="769" font-family="Arial, sans-serif" font-size="9" fill="#374151">Correction Authority · Report Author · Instruction Architect</text>
+
+  <!-- Design Principles footer -->
+  <rect x="0" y="804" width="1400" height="102" fill="#1B2A3C"/>
+  <text x="700" y="826" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">DESIGN PRINCIPLES</text>
+
+  <rect x="40" y="836" width="162" height="26" rx="13" fill="#243447"/>
+  <text x="121" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">No Fabrication</text>
+
+  <rect x="218" y="836" width="162" height="26" rx="13" fill="#243447"/>
+  <text x="299" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">OPEN Discipline</text>
+
+  <rect x="396" y="836" width="180" height="26" rx="13" fill="#243447"/>
+  <text x="486" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">Inferred ≠ Confirmed</text>
+
+  <rect x="592" y="836" width="216" height="26" rx="13" fill="#243447"/>
+  <text x="700" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">Human Authority Maintained</text>
+
+  <rect x="824" y="836" width="162" height="26" rx="13" fill="#243447"/>
+  <text x="905" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">Graceful Ambiguity</text>
+
+  <rect x="1002" y="836" width="180" height="26" rx="13" fill="#243447"/>
+  <text x="1092" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">PM-Calibrated Output</text>
+
+  <rect x="1198" y="836" width="162" height="26" rx="13" fill="#243447"/>
+  <text x="1279" y="854" font-family="Arial, sans-serif" font-size="9.5" fill="#A8C4D8" text-anchor="middle">Concise Over Comprehensive</text>
+
+  <text x="700" y="888" font-family="Arial, sans-serif" font-size="9" fill="#6B8BA8" text-anchor="middle">AI-Assisted Project Delivery Framework  ·  v1.0  ·  Built 2026  ·  OpenClaw (Claude-backed agent)  ·  Docker  ·  Windows</text>
+</svg>
