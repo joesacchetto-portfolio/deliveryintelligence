@@ -1,3 +1,9 @@
+Delivery Intelligence is an independently developed AI-governed project delivery framework designed to accelerate project management activities while preserving human oversight, accountability, and governance controls.
+
+The framework uses AI-assisted analysis, delivery planning, and lifecycle simulation to generate structured project artifacts such as project plans, RAID logs, stakeholder matrices, and kickoff agendas. Human review gates are incorporated throughout the workflow to validate assumptions, assess risks, and approve outputs before they progress to subsequent stages.
+
+Key findings from the project suggest that workflow design and governance structures are more important than prompt engineering alone, that human review remains essential for judgment-based decisions, and that AI is most effective as a delivery accelerator rather than a replacement for accountability and decision-making.
+
 # AI-Assisted Project Delivery Framework
 
 Purpose:
